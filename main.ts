@@ -23,6 +23,7 @@ let e = game.createSprite(randint(0, 4), randint(0, 4))
 let u = game.createSprite(randint(0, 4), randint(0, 4))
 let o = game.createSprite(randint(0, 4), randint(0, 4))
 basic.forever(function () {
+    sprite.set(LedSpriteProperty.Blink, 1)
     if (sprite.isTouchingEdge()) {
         game.removeLife(1)
     }
